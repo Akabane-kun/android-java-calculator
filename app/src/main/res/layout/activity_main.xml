@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="70dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="14pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="117dp"
+        tools:layout_conversion_absoluteWidth="411dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="18pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_conversion_absoluteHeight="114dp"
+        tools:layout_conversion_absoluteWidth="411dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_conversion_absoluteHeight="388dp"
+        tools:layout_conversion_absoluteWidth="411dp">
+
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="C"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+        <Button
+            android:id="@+id/buttonDel"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="⌫"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toEndOf="@+id/buttonC"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="89dp" />
+
+        <Button
+            android:id="@+id/buttonMod"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="%"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toEndOf="@+id/buttonDel"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+        <Button
+            android:id="@+id/buttonX"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="x"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toEndOf="@+id/buttonMod"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+        <Button
+            android:id="@+id/buttonSeven"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="7"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonC"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+        <Button
+            android:id="@+id/buttonEight"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="8"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toEndOf="@+id/buttonSeven"
+            app:layout_constraintTop_toBottomOf="@+id/buttonDel"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+        <Button
+            android:id="@+id/buttonNine"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="9"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toEndOf="@+id/buttonEight"
+            app:layout_constraintTop_toBottomOf="@+id/buttonMod"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+        <Button
+            android:id="@+id/buttonDiv"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="÷"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toEndOf="@+id/buttonNine"
+            app:layout_constraintTop_toBottomOf="@+id/buttonX"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+        <Button
+            android:id="@+id/buttonFour"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSeven"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+        <Button
+            android:id="@+id/buttonFive"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toEndOf="@+id/buttonFour"
+            app:layout_constraintTop_toBottomOf="@+id/buttonEight"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+        <Button
+            android:id="@+id/buttonSix"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="6"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toEndOf="@+id/buttonFive"
+            app:layout_constraintTop_toBottomOf="@+id/buttonEight"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toEndOf="@+id/buttonSix"
+            app:layout_constraintTop_toBottomOf="@+id/buttonDiv"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+        <Button
+            android:id="@+id/buttonOne"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFour"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+        <Button
+            android:id="@+id/buttonTwo"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toEndOf="@+id/buttonOne"
+            app:layout_constraintTop_toBottomOf="@+id/buttonFive"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+        <Button
+            android:id="@+id/buttonThree"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toEndOf="@+id/buttonTwo"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSix"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toEndOf="@+id/buttonThree"
+            app:layout_constraintTop_toBottomOf="@+id/buttonMinus"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+
+        <Button
+            android:id="@+id/buttonZero"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="80dp"
+            android:backgroundTint="@color/white"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonTwo"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+        <Button
+            android:id="@+id/buttonDot"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toEndOf="@+id/buttonZero"
+            app:layout_constraintTop_toBottomOf="@+id/buttonThree"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+        <Button
+            android:id="@+id/buttonEq"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/white"
+            android:text="="
+            android:textColor="@color/black"
+            android:textSize="12pt"
+            app:layout_constraintStart_toEndOf="@+id/buttonDot"
+            app:layout_constraintTop_toBottomOf="@+id/buttonPlus"
+            tools:layout_conversion_absoluteHeight="70dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
