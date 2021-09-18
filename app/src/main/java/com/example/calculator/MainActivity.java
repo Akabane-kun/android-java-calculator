@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textView1 = (TextView) findViewById(R.id.textView);
         TextView textView2 = (TextView) findViewById(R.id.textView2);
         Button buttonDel = (Button) findViewById(R.id.buttonDel);
+        Button buttonDot = (Button) findViewById(R.id.buttonDot);
         Button buttonPlus = (Button) findViewById(R.id.buttonPlus);
         Button buttonPercent = (Button) findViewById(R.id.buttonMod);
         Button buttonX = (Button) findViewById(R.id.buttonX);
@@ -57,6 +58,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        buttonDot.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                if (textView1.getText() != "0"){
+                    textView1.setText(textView1.getText() + ".");
+                }
+            }
+        });
         buttonPlus.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if (textView1.getText() != "0"){
@@ -75,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (textView1.getText() != "0"){
                     textView1.setText(textView1.getText() + "-");
+                } else {
+                    textView1.setText("-");
                 }
             }
         });
